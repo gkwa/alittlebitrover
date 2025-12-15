@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - uses: actions/setup-go@v5
     - name: Set GOVERSION environment variable
       run: echo "GOVERSION=$(go version)" >>$GITHUB_ENV
